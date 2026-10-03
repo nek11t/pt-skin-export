@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "Pony Town skin exporter",
+  "short_name": "ptse",
+  "version": "1.0.1",
+  "description": "Offline fork of the Copy Town's extension: reads a Pony.Town player's skin and downloads it as a .ptc file. No coins, no server, no tap game ┐(︶▽︶)┌",
+  "minimum_chrome_version": "120",
+  "permissions": [],
+  "host_permissions": [
+    "https://pony.town/*"
+  ],
+  "icons": {
+    "16": "assets/icon16.png",
+    "32": "assets/icon32.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://pony.town/*"
+      ],
+      "js": [
+        "scripts/shared/game-map.js",
+        "scripts/shared/skin-codec.js",
+        "scripts/bridge/skin-bridge.js"
+      ],
+      "world": "MAIN",
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://pony.town/*"
+      ],
+      "js": [
+        "scripts/shared/skin-codec.js",
+        "scripts/content/skin-ui.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/ui/skin-wand.png"
+      ],
+      "matches": [
+        "https://pony.town/*"
+      ]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'"
+  }
+}
