@@ -1,4 +1,4 @@
-# Copy Town Skin Reader — offline fork
+# Copy Town Skin Exporter — offline fork
 
 A stripped-down, fully offline fork of Copy Town Coin (https://chromewebstore.google.com/detail/copy-town-coin/akgefebonjhccbeddlllmkpabjacaepk).
 
