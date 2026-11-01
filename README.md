@@ -3,6 +3,9 @@
 A stripped-down, fully offline fork of Copy Town Coin (https://chromewebstore.google.com/detail/copy-town-coin/akgefebonjhccbeddlllmkpabjacaepk).
 
 ***Note: This extension is for Chrome based browsers only. If you are using a non-chromium-based browser, please install the appropriate one to use the extension (the original extension requires the same).***
+
+***! ! ! The repository itself still contains the initial, outdated version. I have not applied these fixes to the main branch. For the latest working release and its complete source code, please check the Releases tab.***
+
 ## What it does
 
 Adds a button next to the in-game player menu in Pony.Town. Click it to
